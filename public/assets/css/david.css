@@ -1,0 +1,163 @@
+.siemreap-regular {
+    font-family: "Siemreap", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Body Fonts, Sidebar, Login */
+
+body,
+.sidebar-fontello,
+.login-fontello {
+    font-family: "Siemreap", sans-serif;
+}
+
+/* Table Style */
+
+.table,
+.th,
+.td {
+    border: 1px solid;
+    border-collapse: collapse;
+    text-align: center;
+    color: lightblue;
+    border-color: rgb(174, 194, 201);
+}
+
+::placeholder {
+    font-family: "Siemreap", sans-serif;
+    color: rgba(236, 236, 236, 0.911);
+}
+
+.jqx-window-header {
+    font-family: "Siemreap", sans-serif; /* Change to your preferred font */
+    font-size: 16px; /* Adjust the size as needed */
+    font-weight: bolder;
+}
+
+/* Style the title bar */
+.jqx-window .jqx-window-title {
+    background-color: #4192ac;
+    /* Title bar background */
+    color: white;
+    /* Title text color */
+    font-weight: bold;
+    /* Title text weight */
+}
+
+/* Style the content area */
+.jqx-window .jqx-window-content {
+    padding-top: 10px;
+    /* Padding inside the content area */
+    font-family: "Siemreap", sans-serif;
+    /* Change font */
+}
+
+/* Close button */
+.jqx-window .jqx-window-close-button {
+    background-color: #d9534f;
+    /* Red background for close button */
+    color: white;
+    /* Close button text color */
+    border-radius: 5px;
+    /* Rounded corners for button */
+}
+
+.jqx-window .jqx-window-close-button:hover {
+    background-color: #c9302c;
+    /* Darker red on hover */
+}
+
+.jqx-window {
+    background-color: #f9f9f9;
+    /* Change background color */
+    border: 2px solid #4192ac;
+    /* Add border */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-family: "Siemreap", sans-serif;
+    /* Customize font */
+    font-size: 11px;
+}
+
+.content-popup-new {
+    font-family: "Siemreap", sans-serif;
+    /* Customize font */
+    font-size: 11px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-horizontal .form-group {
+    margin-bottom: 15px;
+}
+
+.red-star {
+    color: red;
+}
+
+.btn-box-save {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.title-group-meeting {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* border-bottom: 2px solid #007bff; */
+    padding-bottom: 5px;
+}
+
+.control-label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="time"],
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Customize font sizes */
+.fc .fc-toolbar h2 {
+    font-size: 22px;
+}
+
+.fc .fc-button {
+    font-size: 14px;
+    padding: 8px 15px;
+}
+
+.fc .fc-button:disabled {
+    font-size: 14px;
+}
+
+.fc .fc-day-header {
+    font-size: 12px;
+}
+
+.fc .fc-event-title {
+    font-size: 14px;
+}
+
+.fc .fc-day-number {
+    font-size: 14px;
+}

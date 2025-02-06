@@ -1,0 +1,41 @@
+/* @import url("../jqwidgets/styles/jqx.base.css");
+@import url("../jqwidgets/styles/jqx.bootstrap.css"); */
+/* @import url("../css/datepicker.css"); */
+/* @import url("../css/bootstrap-datetimepicker.min.css"); */
+@import url("bootstrap.css");
+@import url("bootstrap-theme.css");
+@import url("jquery.Jcrop.css");
+@import url("ui-grid.css");
+@import url("jquery-confirm.min.css");
+
+@import url("jquery-ui.css");
+@import url("custom.css");
+@import url("normalize.css");
+@import url("style.css");
+@import url("style-new.css");
+@import url("animation.css");
+/* @import url("slick-theme.css"); */
+@import url("smart-module-style.css");
+/* @import url("slick.min.css"); */
+@import url("khmer-font.css");
+@import url("monthly.css");
+.page-navigation {
+    margin: 20px 0;
+}
+.page-navigation a {
+    margin: 0 2px;
+    display: inline-block;
+    padding: 0 5px;
+    color: #ffffff;
+    opacity: 0.8;
+    border-radius: 5px;
+    background-color: #cb584a;
+    text-decoration: none;
+    font-weight: bold;
+}
+.page-navigation a[data-selected] {
+    opacity: 1;
+}
+.monthly-day-title-wrap {
+    padding-top: 5px;
+}

@@ -1,0 +1,43 @@
+@import 'path/to/datatables'; // Import DataTables default styles if necessary
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.dataTable th,
+.dataTable td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px; // Adjust as needed
+    font-family: 'Siemreap';
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    border: 1px solid #ccc;
+    background-color: #f8f9fa;
+    font-family: 'Siemreap';
+}
+
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 0.2rem;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    font-family: 'Siemreap';
+}
+
+.dataTables_wrapper .dataTables_info {
+    margin-top: 0.5rem;
+    font-family: 'Siemreap';
+}
+
+.dataTables_wrapper .dataTables_processing {
+    font-family: 'Siemreap';
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
