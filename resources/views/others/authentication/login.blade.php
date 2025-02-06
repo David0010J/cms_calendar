@@ -1,7 +1,5 @@
 @extends('others.others_layout.master')
 @section('css')
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 @endsection
 @section('others_content')
     <div class="container-fluid p-0">
@@ -23,17 +21,29 @@
 
                                 <!-- User Name Field -->
                                 <div class="form-group">
-                                    <input class="form-control" name="user_name" id="user_name" required type="text"
-                                        placeholder="{{ trans('users.userName') }}" value="{{ old('user_name') }}">
+                                    <input class="form-control @error('user_name') is-invalid @enderror" name="user_name"
+                                        id="user_name" required type="text" placeholder="{{ trans('users.userName') }}"
+                                        value="{{ old('user_name') }}">
+                                    @error('user_name')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
 
                                 <!-- Password Field -->
                                 <div class="form-group">
                                     <div class="form-input position-relative">
-                                        <input class="form-control" type="password" name="password" id="password" required
+                                        <input class="form-control @error('password') is-invalid @enderror" type="password"
+                                            name="password" id="password" required
                                             placeholder="{{ trans('users.password') }}">
                                         <div class="show-hide"><span class="show"> </span></div>
                                     </div>
+                                    @error('password')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
                                 </div>
 
                                 <div class="form-group mb-0">
@@ -49,6 +59,7 @@
                                     </ul>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>

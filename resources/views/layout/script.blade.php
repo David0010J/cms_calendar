@@ -24,4 +24,11 @@
 <script src="{{ asset('assets/js/theme-customizer/customizer.js') }}"></script>
 <!-- login js-->
 
+
+<script src="{{ asset('assets/js/datepicker/date-picker/datepicker.js') }}"></script>
+<script src="{{ asset('assets/js/datepicker/date-picker/datepicker.en.js') }}"></script>
+<script src="{{ asset('assets/js/datepicker/date-picker/datepicker.custom.js') }}"></script>
+
+<script src="{{ asset('assets/js/select2/select2.full.min.js') }}"></script>
+<script src="{{ asset('assets/js/select2/select2-custom.js') }}"></script>  
 @yield('js')

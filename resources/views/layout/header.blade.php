@@ -17,7 +17,7 @@
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
             <div class="logo-header-main"><a href="{{ route('dashboard') }}"><img class="img-fluid for-light"
                         src="{{ asset('assets/images/logo/logo2.png') }}" alt=""><img class="img-fluid for-dark"
-                        src="{{ asset('assets/images/logo/logo.png') }}" alt=""></a></div>
+                        src="{{ asset('assets/images/logo/logo31.png') }}" alt=""></a></div>
         </div>
         <div class="left-header col horizontal-wrapper ps-0">
             <div class="left-menu-header">
