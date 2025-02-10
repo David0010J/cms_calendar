@@ -1,0 +1,73 @@
+
+/*!
+ * reparsoft - LESS  last compressed 
+ * @licence reparsoft - v1.0.0 (2015-01-19)
+ * http://56hm.com/ | Licence: MIT
+ */.wrapper {
+  width: 1000px;
+  margin: auto
+}
+
+.wid-f { width: 100% }
+
+.hei-f { height: 100% }
+
+.of-h { overflow: hidden }
+
+.fat-l { float: left }
+
+.fat-r { float: right }
+
+.pat-5 { padding-top: 5px }
+
+.pat-10 { padding-top: 10px }
+
+.mat-5 { margin-top: 5px }
+
+.mat-10 { margin-top: 10px }
+
+.fot-yhei { font-family: 'Microsoft Yahei' }
+
+.fot-arial { font-family: 'Arial' }
+
+.icon {
+  display: inline-block;
+  zoom: 1;
+  vertical-align: middle
+}
+[class^='ico-'] {
+background:url('../../images/themes/simple/ico.png')
+}
+
+.ico-bar_edge { background-position: 0 -42px }
+
+.header { background: url('../../images/themes/simple/header.jpg') center no-repeat }
+
+.nav-main { background-color: #0f3fa1 }
+
+.nav-main ul.wrapper>li { background: url('../../images/themes/simple/nav_main-split.gif') center left no-repeat }
+
+.nav-main ul.wrapper>li a { color: #fff }
+
+.nav-main ul.wrapper>li:hover a { color: #fed958 }
+[class^='tibar-']>.bar>a {
+color:#fff
+}
+[class^='tibar-']>.bar>a:hover {
+color:#fed958
+}
+[class^='tibar-']>.edge {
+background-color:#0f3fa1
+}
+
+.tibar-simple { background-color: #e95546 }
+
+.list-aggregate li { border-bottom-color: #e5e5e5 }
+
+.list-aggregate li a { color: #fff }
+
+.list-aggregate li a:hover { color: #fff }
+
+.list-aggregate li p { color: #fff; padding:0 10px; }
+
+.list-aggregate li:hover { background-color: #fc6d58 }

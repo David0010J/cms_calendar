@@ -1,0 +1,19 @@
+/* Jqx css lib*/
+/* @import url("../jqwidgets/styles/jqx.base.css");
+@import url("../jqwidgets/styles/jqx.bootstrap.css");
+@import url("../jqwidgets/styles/jqx.metro.css"); */
+
+/* Bootstraps css lib*/
+@import url("jquery.Jcrop.css");
+@import url("ui-grid.css");
+
+
+@import url("jquery-ui.css");
+
+/* Your own css lib*/
+/*@import url("admin-login.css");*/
+@import url("admin.css");
+@import url("tag.css");
+
+/*Confirm delete*/
+@import url("jquery-confirm.min.css");

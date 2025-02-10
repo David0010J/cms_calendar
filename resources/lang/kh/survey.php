@@ -1,0 +1,20 @@
+<?php 
+return [
+    'survey_template' => 'ទម្រង់ស្ទង់មតិ',
+    'survey_template' => 'ទម្រង់ស្ទង់មតិ',
+    'code' => 'កូដ',
+    'name' => 'ឈ្មោះ',
+    'description' => 'សេចក្ដីពិពណ៌នា',
+    'question_answer' => 'សំនួរនឹងចម្លើយ',
+    'survey_info' => 'ព័ត៏មានទម្រង់',
+    'question' => 'សំនួរ',
+    'answer' => 'ចម្លើយ',
+    'no_question_help' => 'ពុំមានសំនូរស្រាប់?',
+    'create_new' => 'បង្កើតថ្មី',
+    'create_question' => 'បង្កើតសំនួរ',
+    'option' => 'ជម្រើស',
+    'title' => 'ចំណងជើង',
+    'type' => 'ប្រភេទ',
+    'number_of_question' => 'ចំនួនសំនួរ',
+    'question_and_answer' => 'សំនួរចម្លើយ',
+];

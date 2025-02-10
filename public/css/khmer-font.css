@@ -1,0 +1,24 @@
+/* khmer */
+@font-face {
+  font-family: 'Battambang';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Battambang'), url(../fonts/Battambang1.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+/* khmer */
+@font-face {
+  font-family: 'Battambang';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Battambang Bold'), local('Battambang-Bold'), url(../fonts/Battambang1.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
+/* khmer */
+@font-face {
+  font-family: 'Moul';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Moul'), url(../fonts/KHMERMoul.woff2) format('woff2');
+  unicode-range: U+1780-17FF, U+200B-200C, U+25CC;
+}
