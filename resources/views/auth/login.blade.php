@@ -1,111 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('others.others_layout.master')
+@section('css')
+@endsection
+@section('others_content')
+    <div class="container-fluid p-0">
+        <div class="row m-0">
+            <div class="col-12 p-0">
+                <div class="login-card">
+                    <div>
+                        <div><a class="logo"><img class="img-fluid for-light" style="width:100%;"
+                                    src="{{ asset('assets/images/logo.png') }}" alt="login page"></a></div>
+                        <div class="login-main">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
-    <title>CMS-Calendar</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="{{ asset('assets/plugins/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
-    <!-- You can change the theme colors from here -->
-    <link href="{{ asset('assets/css/colors/blue.css') }}" id="theme" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-<![endif]-->
-</head>
+                            <!-- Login Form -->
+                            <form class="theme-form" role="form" method="POST" action="{{ route('login.post') }}">
+                                @csrf
+                                <h5 style="text-align: center" class="text-center">
+                                    ជំហានចាប់ផ្ដើមឆ្ពោះទៅកាន់ប្រតិទិនអេឡិកត្រូនិក
+                                </h5>
+                                <hr />
 
-<body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-        <svg class="circular" viewBox="25 25 150 150" width="200" height="200">
-            <circle class="path" cx="75" cy="75" r="60" fill="none" stroke-width="8"
-                stroke-miterlimit="10" />
-        </svg>
-    </div>
+                                <!-- User Name Field -->
+                                <div class="form-group">
+                                    <input class="form-control @error('user_name') is-invalid @enderror" name="user_name"
+                                        id="user_name" required type="text" placeholder="{{ trans('users.userName') }}"
+                                        value="{{ old('user_name') }}">
+                                    @error('user_name')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
 
+                                <!-- Password Field -->
+                                <div class="form-group">
+                                    <div class="form-input position-relative">
+                                        <input class="form-control @error('password') is-invalid @enderror" type="password"
+                                            name="password" id="password" required
+                                            placeholder="{{ trans('users.password') }}">
+                                        <div class="show-hide"><span class="show"> </span></div>
+                                    </div>
+                                    @error('password')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                    @enderror
+                                </div>
 
-    <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <section id="wrapper">
-        <div class="login-register" style="background-image:url(../assets/images/background/login-register.jpg);">
-            <div class="login-box card">
-                <div class="card-block">
-                    <form class="form-horizontal form-material" id="loginform" action="{{ route('login') }}"
-                        method="POST">
-                        @csrf
-                        <h3 class="box-title m-b-20">Sign In</h3>
-                        <div class="form-group">
-                            <div class="col-xs-12">
-                                <input class="form-control" type="email" name="email" required placeholder="Email"
-                                    value="{{ old('email') }}">
-                                @if ($errors->has('email'))
-                                    <div class="text-danger">{{ $errors->first('email') }}</div>
-                                @endif
-                            </div>
+                                <div class="form-group mb-0">
+                                    <div class="text-end mt-3">
+                                        <button class="btn btn-dark btn-block w-100" type="submit"
+                                            style="border-radius: 5px;">
+                                            ចូលប្រព័ន្ធ
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <ul class="login-social">
+                                    </ul>
+                                </div>
+                            </form>
+
                         </div>
-                        <div class="form-group">
-                            <div class="col-xs-12">
-                                <input class="form-control" type="password" name="password" required
-                                    placeholder="Password">
-                                @if ($errors->has('password'))
-                                    <div class="text-danger">{{ $errors->first('password') }}</div>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="form-group text-center m-t-20">
-                            <div class="col-xs-12">
-                                <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light"
-                                    type="submit">Log In</button>
-                            </div>
-                        </div>
-                        @if (session('error'))
-                            <div class="alert alert-danger">
-                                {{ session('error') }}
-                            </div>
-                        @endif
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="{{ asset('assets/plugins/jquery/jquery.min.js') }}"></script>
-    <!-- Bootstrap tether Core JavaScript -->
-    <script src="{{ asset('assets/plugins/bootstrap/js/tether.min.js') }}"></script>
-    <script src="{{ asset('assets/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-    <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="{{ asset('assets/js/jquery.slimscroll.js') }}"></script>
-    <!--Wave Effects -->
-    <script src="{{ asset('assets/js/waves.js') }}"></script>
-    <!--Menu sidebar -->
-    <script src="{{ asset('assets/js/sidebarmenu.js') }}"></script>
-    <!--stickey kit -->
-    <script src="{{ asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js') }}"></script>
-    <!--Custom JavaScript -->
-    <script src="{{ asset('assets/js/custom.min.js') }}"></script>
-    <!-- ============================================================== -->
-    <!-- Style switcher -->
-    <!-- ============================================================== -->
-    <script src="{{ asset('assets/plugins/styleswitcher/jQuery.style.switcher.js') }}"></script>
-</body>
+    </div>
 
-</html>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            font-size: 16px;
+        }
+    </style>
+@endsection
+
+@section('js')
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+@endsection

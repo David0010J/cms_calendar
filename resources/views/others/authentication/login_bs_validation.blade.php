@@ -7,8 +7,8 @@
       <div class="col-xl-5 p-0">
         <div class="login-card">
           <div>
-            <div><a class="logo text-center" href="{{ route('dashboard') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
-            <div class="login-main"> 
+            <div><a class="logo text-center" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
+            <div class="login-main">
               <form class="theme-form">
                 <h4 class="text-center">Sign in to account</h4>
                 <p class="text-center">Enter your email & password to login</p>

@@ -1,8 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\ProfileUpdateRequest;
+use App\Models\PublicHoliday;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -58,7 +59,10 @@ class ProfileController extends Controller
         return Redirect::to('/');
     }
 
-    public function calendarView(){
-        return view('pages.calendar.calendar');
+    public function calendarView()
+    {
+        $publicHolidays = PublicHoliday::where('lang', 'kh')->orderBy('date')->get();
+
+        return view('pages.calendar.calendar', compact('publicHolidays'));
     }
 }

@@ -6,9 +6,10 @@
 <meta name="keywords"
     content="admin template, Tivo admin template, dashboard template, flat admin template, responsive admin template, web app">
 <meta name="author" content="pixelstrap">
-<link rel="icon" href="{{ asset('assets/images/logo/logo31.png') }}" type="image/x-icon">
+<link rel="icon" href="{{ asset('assets/images/logo.png') }}" type="image/x-icon">
 <link rel="shortcut icon" href="{{ asset('assets/images/favicon/favicon.png') }}" type="image/x-icon">
-<title>CMS-CALENDAR</title>
+<title>@yield('title', trans('trans.project_name'))</title>
+
 
 
 @yield('head')

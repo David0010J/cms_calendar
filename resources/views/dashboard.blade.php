@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="{{ route('dashboard') }}"><i data-feather="home"></i></a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('dashboard.index') }}"><i data-feather="home"></i></a></li>
                         <li class="breadcrumb-item">{{ trans('file.dashboard') }}</li>
                         {{-- <li class="breadcrumb-item active">Ecommerce</li> --}}
                     </ol>

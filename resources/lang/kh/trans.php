@@ -14,7 +14,7 @@ return [
     */
     /* System Config */
     'html_title'			    =>'ក្រសួងសេដ្ឋកិច្ច និង ហិរញ្ញវត្ថុ',
-    'project_name'			    =>'ការិយាល័យវៃឆ្លាត',
+    'project_name'			    =>'ប្រតិទិន',
     'system_copy_right'		    =>'បង្កើតដោយ៖ អគ្គនាយកដ្ឋានបច្ចេកវិទ្យាព័ត៌មានគ្រប់គ្រងហិរញ្ញវត្ថុសាធារណៈ',
     'institude_name_kh'	        =>'ក្រសួងសេដ្ឋកិច្ច និងហិរញ្ញវត្ថុ',
     'institude_name_en'		    =>'Ministry of Economy and Finance',

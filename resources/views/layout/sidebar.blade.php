@@ -1,11 +1,11 @@
 <div class="sidebar-wrapper">
     <div>
-        <div class="logo-wrapper"><a href="{{ route('dashboard') }}"><img class="img-fluid for-light"
+        <div class="logo-wrapper"><a href="{{ route('dashboard.index') }}"><img class="img-fluid for-light"
                     src="{{ asset('assets/images/logo/logo2.png') }}"alt=""></a>
             <div class="back-btn"><i class="fa fa-angle-left"></i></div>
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"></i></div>
         </div>
-        <div class="logo-icon-wrapper"><a href="{{ route('dashboard') }}">
+        <div class="logo-icon-wrapper"><a href="{{ route('dashboard.index') }}">
                 <div class="icon-box-sidebar"><i data-feather="grid"></i></div>
             </a></div>
         <nav class="sidebar-main">
@@ -19,7 +19,7 @@
                     <li class="menu-box sidebar-fontello">
                         <ul>
                             <li class="sidebar-list"><a class="sidebar-link sidebar-title"
-                                    href="{{ route('dashboard') }}"><i
+                                    href="{{ route('dashboard.index') }}"><i
                                         data-feather="home"></i><span>{{ trans('file.dashboard') }}</span></a></li>
                             <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i
                                         data-feather="calendar"

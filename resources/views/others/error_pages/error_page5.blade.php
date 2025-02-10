@@ -175,7 +175,7 @@
       </div>
       <div class="col-md-8 offset-md-2">
         <h3>Page Not Found</h3>
-        <p class="sub-content">The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved.</p><a class="btn btn-primary" href="{{ route('dashboard') }}">BACK TO HOME PAGE</a>
+        <p class="sub-content">The page you are attempting to reach is currently not available. This may be because the page does not exist or has been moved.</p><a class="btn btn-primary" href="{{ route('dashboard.index') }}">BACK TO HOME PAGE</a>
       </div>
     </div>
   </div>

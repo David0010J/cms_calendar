@@ -4,12 +4,12 @@
 <div class="page-wrapper">
     <div class="container-fluid p-0">
       <div class="row">
-        <div class="col-12">     
+        <div class="col-12">
           <div class="login-card">
             <div>
-              <div><a class="logo" href="{{ route('dashboard') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
-              <div class="login-main"> 
-                <form class="theme-form">                   
+              <div><a class="logo" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
+              <div class="login-main">
+                <form class="theme-form">
                   <h4>Reset Your Password</h4>
                   <div class="form-group">
                     <label class="col-form-label">Enter Your Mobile Number</label>

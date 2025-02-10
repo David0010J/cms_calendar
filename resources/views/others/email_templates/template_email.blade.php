@@ -307,7 +307,7 @@
                                         src="{{ asset('assets/images/logo/logo2.png') }}"></td>
                                 <td class="menu" align="right" style="padding-right:15px;">
                                     <ul>
-                                        <li style="display: inline-block;text-decoration: unset"><a href="{{ route('dashboard') }}">Home</a></li>
+                                        <li style="display: inline-block;text-decoration: unset"><a href="{{ route('dashboard.index') }}">Home</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('list_wish') }}">Whishlist</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('cart') }}">My cart</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('contacts') }}">Contact</a></li>

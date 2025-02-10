@@ -11,11 +11,8 @@ class PublicHolidayController extends Controller
         // Fetch public holidays in Khmer
         $publicHolidays = PublicHoliday::where('lang', 'kh')->orderBy('date')->get();
 
-        // Debugging the data
-        // dd($publicHolidays);
-
         // Return view with data
-        return view('pages.calendar.calendar', ['publicHolidays' => $publicHolidays]);
+        return view('pages.calendar.calendar', compact('publicHolidays'));
     }
 
     public function create()

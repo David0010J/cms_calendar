@@ -45,7 +45,7 @@
                         <li><a href="index4.html">Analytical Dashboard</a></li>
                         <li><a href="index5.html">Minimal Dashboard</a></li>
                     </ul> --}}
-                    <a href="{{ route('dashboard') }}" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
+                    <a href="{{ route('dashboard.index') }}" aria-expanded="false"><i class="mdi mdi-gauge"></i><span
                             class="hide-menu">Dashboard
                         </span>
                     </a>

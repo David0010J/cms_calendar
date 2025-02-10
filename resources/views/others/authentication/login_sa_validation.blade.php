@@ -1,7 +1,7 @@
 @extends('others.others_layout.master')
 
 @section('others_css')
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/sweetalert2.css') }}">    
+<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/vendors/sweetalert2.css') }}">
 @endsection
 
 @section('others_content')
@@ -10,8 +10,8 @@
       <div class="col-12 p-0">
         <div class="login-card">
           <div>
-            <div><a class="logo text-center" href="{{ route('dashboard') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
-            <div class="login-main"> 
+            <div><a class="logo text-center" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
+            <div class="login-main">
               <form class="theme-form">
                 <h4 class="text-center">Sign in to account</h4>
                 <p class="text-center">Enter your email & password to login</p>
@@ -56,5 +56,5 @@
 @endsection
 
 @section('others_script')
-<script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>    
+<script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
 @endsection

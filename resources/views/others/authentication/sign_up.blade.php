@@ -6,7 +6,7 @@
             <div class="col-12 p-0">
                 <div class="login-card ">
                     <div>
-                        <div><a class="logo text-center" href="{{ route('dashboard') }}"><img class="img-fluid for-light"
+                        <div><a class="logo text-center" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light"
                                     src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
                         <div class="login-main">
                             <form class="theme-form">

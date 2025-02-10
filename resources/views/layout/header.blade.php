@@ -15,7 +15,7 @@
         </form>
         <div class="header-logo-wrapper col-auto p-0">
             <div class="toggle-sidebar"><i class="status_toggle middle sidebar-toggle" data-feather="grid"> </i></div>
-            <div class="logo-header-main"><a href="{{ route('dashboard') }}"><img class="img-fluid for-light"
+            <div class="logo-header-main"><a href="{{ route('dashboard.index') }}"><img class="img-fluid for-light"
                         src="{{ asset('assets/images/logo/logo2.png') }}" alt=""><img class="img-fluid for-dark"
                         src="{{ asset('assets/images/logo/logo31.png') }}" alt=""></a></div>
         </div>
@@ -39,7 +39,7 @@
                         <ul class="onhover-show-div left-dropdown">
                             <li class="flyout-right"><a href="javascript:void(0)">Dashboard</a>
                                 <ul>
-                                    <li> <a href="{{ route('dashboard') }}">Officer</a></li>
+                                    <li> <a href="{{ route('dashboard.index') }}">Officer</a></li>
                                     <li> <a href="#">Layout Dark</a></li>
                                 </ul>
                             </li>
@@ -184,22 +184,27 @@
                 <ul class="profile-nav onhover-dropdown d-flex align-items-center">
                     <!-- <div class="account-user"><i data-feather="user"></i></div> -->
                     <li>
-                        <a href="#" class="d-flex align-items-center">
+                        <a href="{{ route('logout') }}" class="d-flex align-items-center">
                             <span class="user-img">
                                 <img src="{{ asset('assets/images/logo/logo.png') }}" class="user-logo">
-                                {{-- {{ Auth::user-> }} --}}
-                                <span>Administrator</span>
+                                {{ Auth::user()->user_name }}
+                                {{-- <span>Administrator</span> --}}
                             </span>
                         </a>
                         <ul class="profile-dropdown onhover-show-div">
                             {{-- <li><a href="#"><i data-feather="user"></i><span>Account</span></a></li>
                             <li><a href="#"><i data-feather="mail"></i><span>Inbox</span></a></li>
                             <li><a href="#"><i data-feather="settings"></i><span>Settings</span></a></li> --}}
-                            <li><a href="{{ route('logout') }}"><i data-feather="log-in"> </i><span>Log Out</span></a>
-                            </li>
+                            <form action="{{ route('logout') }}" method="POST">
+                                @csrf
+                                <li><a href="{{ route('logout') }}"><i data-feather="log-in"> </i><span>Log
+                                            Out</span></a>
+                            </form>
                         </ul>
                     </li>
                 </ul>
+                </li>
+            </ul>
             </ul>
         </div>
         <script class="result-template" type="text/x-handlebars-template">

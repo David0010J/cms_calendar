@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex" />
     <link rel="shortcut icon" href="{{ asset('icon/mef.ico') }}" />
-    <title>@yield('pageTitle', 'ការិយាល័យវៃឆ្លាត - ជំហានចាប់ផ្ដើមឆ្ពោះទៅកាន់រដ្ឋាភិបាលអេឡិកត្រូនិក')</title>
+    <title>@yield('pageTitle', 'ប្រតិទិន - ជំហានចាប់ផ្ដើមឆ្ពោះទៅកាន់រដ្ឋាភិបាលអេឡិកត្រូនិក')</title>
     <script type="text/javascript" src="{{ asset('js/jquery-3.7.1.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery-ui.js') }}"></script>

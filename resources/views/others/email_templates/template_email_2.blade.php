@@ -302,7 +302,7 @@
                                             src="{{ asset('assets/images/logo/logo2.png') }}"></td>
                                     <td class="menu" align="right">
                                         <ul style="margin-right:15px;">
-                                            <li style="display: inline-block;text-decoration: unset"><a href="{{ route('dashboard') }}">Home</a></li>
+                                            <li style="display: inline-block;text-decoration: unset"><a href="{{ route('dashboard.index') }}">Home</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('list_wish') }}">Whishlist</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('cart') }}">My cart</a></li>
                                         <li style="display: inline-block;text-decoration: unset"><a href="{{ route('contacts') }}">Contact</a></li>

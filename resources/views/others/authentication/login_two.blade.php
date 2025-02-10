@@ -1,18 +1,18 @@
 @extends('others.others_layout.master')
 
 @section('others_css')
-    
+
 @endsection
 
 @section('others_content')
 <div class="container-fluid">
     <div class="row">
       <div class="col-xl-5"><img class="bg-img-cover bg-center" src="{{ asset('assets/images/login/3.jpg') }}" alt="looginpage"></div>
-      <div class="col-xl-7 p-0">    
+      <div class="col-xl-7 p-0">
         <div class="login-card">
           <div>
-            <div><a class="logo" href="{{ route('dashboard') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
-            <div class="login-main"> 
+            <div><a class="logo" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
+            <div class="login-main">
               <form class="theme-form">
                 <h4 class="text-center">Sign in to account</h4>
                 <p class="text-center">Enter your email & password to login</p>
@@ -57,5 +57,5 @@
 @endsection
 
 @section('others_script')
-    
+
 @endsection

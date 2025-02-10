@@ -9,11 +9,11 @@
           <div class="col-12">
             <div class="login-card">
               <div>
-                <div><a class="logo" href="{{ route('dashboard') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
+                <div><a class="logo" href="{{ route('dashboard.index') }}"><img class="img-fluid for-light" src="{{ asset('assets/images/logo/logo2.png') }}" alt="looginpage"></a></div>
                 <div class="login-main">
                   <form class="theme-form">
                     <h4 class="mb-0">Unlock  </h4>
-                    <div class="form-group">                      
+                    <div class="form-group">
                       <svg class="unlock-1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 500 500">
                         <style>
                           tspan { white-space:pre }
