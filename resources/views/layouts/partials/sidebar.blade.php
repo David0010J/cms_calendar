@@ -54,7 +54,7 @@
                     <a class="has-arrow " href="" aria-expanded="false"><i class="mdi mdi-bullseye"></i><span
                             class="hide-menu">Calendar</span></a>
                     <ul aria-expanded="false" class="collapse">
-                        <li><a href="{{ route('calendar.view') }}">Calendar</a></li>
+                        <li><a href="{{ route('index') }}">Calendar</a></li>
                         <li><a href="app-chat.html">Chat app</a></li>
                         <li><a href="app-ticket.html">Support Ticket</a></li>
                         <li><a href="app-contact.html">Contact / Employee</a></li>
